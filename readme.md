@@ -1,41 +1,70 @@
-# Stencil App Starter
+# Cos4Bio - Expert Portal
 
-Stencil is a compiler for building fast web apps using Web Components.
+## What is Cos4Cloud:
 
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool.  Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
+Cos4Cloud is H2020 European Project, and one of their service is a Platform that allow to the experts to Find, Access, Reuse and Interoperate with observations from differentes Citizen Observatories, following the FAIR rules in terms to integrate in the future in the best way in the EOSC environment. 
 
-Stencil components are just Web Components, so they work in any major framework or with no framework at all. In many cases, Stencil can be used as a drop in replacement for traditional frontend frameworks given the capabilities now available in the browser, though using it as such is certainly not required.
+## What is Cos4Bio:
 
-Stencil also enables a number of key capabilities on top of Web Components, in particular Server Side Rendering (SSR) without the need to run a headless browser, pre-rendering, and objects-as-properties (instead of just strings).
+## What are the Biodiversty CO envolved?
 
-## Getting Started
+- ArtPortalen: https://www.artportalen.se/
 
-To start a new project using Stencil, clone this repo to a new directory:
+- iSpot: https://www.ispotnature.org/
 
-```bash
-npm init stencil app
-```
+- Natusfera: https://natusfera.org 
 
-and run:
+- PlantNet: https://plantnet.org/
 
-```bash
-npm start
-```
+And we hope that in the near future more Biodiversity CO could integrate in this service.
 
-To build the app for production, run:
+## What are the Environmental CO envolved?
 
-```bash
-npm run build
-```
+- OdourCollect: https://odourcollect.eu
 
-To run the unit tests once, run:
+- CanAir.oi: https://canair.io/
 
-```
-npm test
-```
 
-To run the unit tests and watch for file changes during development, run:
+## How to deploy Cos4Cloud env. locally:
 
-```
-npm run test.watch
-```
+The first thing that you have to do is install docker, but what is docker? https://www.docker.com/why-docker 
+
+Once you have installed this sotfware on your machine the only thing that you have to do is type the next commando inside the Cos4Cloud folder:
+
+```docker-compose up```
+
+and that's all 🙌
+
+Now you can open your favourite browser and type: http://localhost:3333
+
+and Enjoy!!
+
+## Init with Firebase Framework
+### front-end
+```cd cos4cloud-frontend```
+```npm start```
+
+### backend
+#### https://www.npmjs.com/package/firebase-tools
+```cd cos4cloud```
+```npm run f:start```
+
+## Init with Raw Node
+### front-end
+```cd cos4cloud-frontend```
+```HOST=http://localhost:10010/api npm start```
+
+### backend
+#### https://nodejs.org
+```cd cos4cloud```
+```node app```
+
+
+
+### LICENSES:
+
+<a href="https://www.safecreative.org/work/2110259629728-cos4bio" target="_blank">
+<span>Cos4Bio</span> -
+<span>CC by-nc-sa 4.0</span> -
+<span>Bineo Consulting SL</span>
+</a>
