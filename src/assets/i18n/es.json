@@ -1,0 +1,116 @@
+{
+  "home_title": "Toda la biodiversidad<br/>en un único lugar",
+  "observations": "observaciones",
+  "last_obersations": "Últimas observaciones",
+  "need_login": "Debes estar logueado",
+  "share": "Compartir",
+  "social": "en redes sociales",
+  "english": "Inglés",
+  "spanish": "Español",
+  "french": "Francés",
+  "german": "Alemán",
+  "no_results": "Sin resultados",
+  "alert": "Alerta",
+  "errorSearch": "Error en la búsqueda",
+  "selectSpeciePlace": "Debes seleccionar una especie o un lugar del listado.",  
+  "menu": {
+    "logout": "Cerrar sesión",
+    "settings": "Configuración",
+    "history": "Historial de descargas"
+  },
+  "login": {
+    "login": "Iniciar sesión",
+    "user": "Usuario",
+    "password": "Contraseña",
+    "message": "Vas a iniciar sesión haciendo uso del sistema Federado de Authenix, para más información visita la web"
+  },
+  "filters": {
+    "search_species": "Buscar especies",
+    "search_places": "Buscar lugares",
+    "filter": "Filtros",
+    "types": "Tipos",
+    "search": "Buscar",
+    "quality": "Calidad",
+    "research": "Investigación",
+    "casual": "Casual",
+    "with_geo": "Con geo",
+    "with_photos": "Fotografías",
+    "licenses": "Licencias",
+    "date": "Fecha",
+    "portals": "Portales",
+    "geo": "Con geolocalización",
+    "photos": "Fotos"
+  },
+  "user": {
+    "logout": "Cerrar sesión",
+    "info": "Información",
+    "role": "Rol",
+    "identifications": "identificaciones",
+    "species": "especies",
+    "types": "tipos",
+    "city": "Ciudad",
+    "description": "Descripción",
+    "update": "Actualizar",
+    "agreeNotifications": "Estoy de acuerdo en recibir notificaciones por email",
+    "agreeTerms": "Estoy de acuerdo con los términos y condiciones."
+  },
+  "profile": {
+    "nickname": "Alias",
+    "name": "Nombre",
+    "email": "Email",
+    "profession": "Profesión",
+    "city": "Ciudad",
+    "comments": "Comentarios",
+    "identifications": "Identificaciones",
+    "email-noti": "Email para notificaciones por correo electrónico"
+  },
+  "stats": {
+    "comments_identi": "Comentarios e Identificaciones",
+    "all": "Todo",
+    "comm_id_by_portal": "% Comentarios e identificaciones por Portal",
+    "downloads": "Descargar",
+    "downloads_reasons": "Razón de la descarga"
+  },
+  "download": {
+    "download_title": "Descargar",
+    "download_title_modal": "Seleccione su razón(es) de descarga:",
+    "download_history": "Historial de descargas",
+    "format": "Formato",
+    "re_run": "Ver",
+    "view": "Ver"
+  },
+  "downloads_reasons_type": {
+    "biosecurity management/planning": "Conservación manejo/plan",
+    "citizen science": "Ciencia Ciudadana",
+    "collection management": "Gestión de colecciones",
+    "conservation management/planning": "Conservación manejo/plan",
+    "ecological research": "Investigación ecológica",
+    "education": "Educación",
+    "environmental assessment": "Gestión medioambiental",
+    "restoration/remediation": "Restauración/Remediación",
+    "scientific research": "Investigación científica",
+    "systematic research/taxonomy": "Investigación sistemática/taxonomía",
+    "species modelling": "Modelado de especies",
+    "testing": "Prueba",
+    "other": "Otro"
+  },
+  "comments": {
+    "comments": "Comentarios",
+    "identification": "Identificaciones",
+    "type_comment": "Escriba su comentario...",
+    "add_identification": "Enviar",
+    "has_identified": "Observación identificada",
+    "add_comment_identification": "Añadir comentario/identificación",
+    "help": " (Necesita ayuda)",
+    "someone": "Alguien"
+  },
+  "footer": {
+    "about": "Acerca de",
+    "help": "Ayuda",
+    "privacy": "Política de privacidad",
+    "term": "Términos de Servicio",
+    "contact": "Contacto",
+    "follow_us": "Síganos:",
+    "h2020": "Este proyecto ha recibido fondos de Programa Horizon H2020 de Investigación e Innovación de la Unión Europea bajo el Acuerdo No 863463"
+  }
+}

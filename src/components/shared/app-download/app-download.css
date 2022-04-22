@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.wrapper {
+  display: grid;
+  max-width: 1400px;
+  width: calc(100% - 4rem);
+  margin: auto;
+  pointer-events: none;
+}
+ion-button {
+  padding: 0 15px;
+  pointer-events: all;
+  right: 0;
+  position: absolute;
+  margin-top: -35px;
+}
+ion-button ion-icon {
+  margin-top: -5px;
+}

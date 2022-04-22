@@ -1,0 +1,36 @@
+{
+  "name": "cos4bio",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Cos4Bio",
+  "scripts": {
+    "b": "stencil build --prod",
+    "build": "npm run swagger; stencil build --prod",
+    "start": "npm run swagger; stencil build --dev --watch --serve --no-open",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "swagger": "yaml2json ../cos4cloud/api/swagger/swagger.yaml > ./public/swagger.json",
+    "deploy": "rm -rf www; npm run build; firebase deploy --only hosting:cos4cloud-2d9d3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^2.3.4",
+    "@stencil/core": "2.0.3",
+    "@stencil/router": "^1.0.1",
+    "@types/node": "^14.14.7",
+    "fs-extra": "^10.0.0",
+    "hound": "^1.0.5",
+    "rollup-plugin-copy": "^3.4.0",
+    "workbox-build": "^4.3.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chartist": "^0.11.4",
+    "chartist-plugin-fill-donut": "^0.1.4",
+    "chartist-plugin-legend": "^0.6.2",
+    "chartist-plugin-tooltip": "0.0.11",
+    "dirty-json": "^0.9.2",
+    "ol": "^6.4.3"
+  },
+  "types": "dist/types/components.d.ts"
+}

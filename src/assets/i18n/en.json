@@ -1,0 +1,116 @@
+{
+  "home_title": "All the biodiversity<br/>observations in one place",
+  "observations": "observations",
+  "last_obersations": "Last observations",
+  "need_login": "You need to be logged",
+  "share": "Share",
+  "social": "on social networks",  
+  "english": "English",
+  "spanish": "Spanish",
+  "french": "French",
+  "german": "German",
+  "no_results": "No results",
+  "alert": "Alert",
+  "errorSearch": "Error searching",
+  "selectSpeciePlace": "You must select \"place\" or \"specie\" of the list",
+  "menu":{
+    "logout": "Logout",
+    "settings": "Settings",
+    "history": "Download history"
+  },
+  "login":{
+    "login": "Login",
+    "user": "User",
+    "password": "Password",
+    "message": "You are going to login using a Authenix Federeate system, for more information visit the web"    
+  },
+  "filters":{
+    "search_species": "Search species",
+    "search_places": "Search places",
+    "filter": "Filters",
+    "types": "Types",    
+    "search": "Search",    
+    "quality": "Quality",
+    "research": "Research",
+    "casual": "Casual",
+    "with_geo": "With geo",
+    "with_photos": "Whit photos",
+    "licenses": "Licences",
+    "date": "Date",
+    "portals": "Portals",
+    "geo": "With geolocalization",
+    "photos": "Photos"
+  },
+  "user":{
+    "logout": "Logout",
+    "info": "Info",
+    "role": "Role",
+    "identifications": "identifications",
+    "species": "species",
+    "types": "types",
+    "city": "City",
+    "description": "Description",
+    "update": "Update",
+    "agreeNotifications": "I agree to receive notifications by email",
+    "agreeTerms": "I agree with the terms and conditions."
+  },
+  "profile":{
+    "nickname": "Alias",
+    "name": "Name",
+    "email": "Email",
+    "profession": "Profession",
+    "city": "City",
+    "comments": "Comments",
+    "identifications": "Identifications",
+    "email-noti": "Email (for notifications)"
+  },
+  "stats":{
+    "comments_identi": "Comments and Identifications",
+    "all": "All",
+    "comm_id_by_portal": "% Comments & Identifications by Portal",
+    "downloads": "Download",
+    "downloads_reasons": "% Download reasons"
+  },
+  "download":{
+    "download_title": "Download",
+    "download_title_modal": "Select  your download reason(s):",
+    "download_history": "Download history",
+    "format": "Format",
+    "re_run": "Re-run",
+    "view": "View"
+  },
+  "downloads_reasons_type":{
+    "biosecurity management/planning": "Biosecurity management/planning",
+    "citizen science": "Citizen Science",
+    "collection management": "Collection management",
+    "conservation management/planning": "Conservation management/planning",
+    "ecological research": "Ecological research",
+    "education": "Education",
+    "environmental assessment": "Environmental assessment",
+    "restoration/remediation": "Retoration/Remediation",
+    "scientific research": "Scientific investigation",
+    "systematic research/taxonomy": "Systematic research/taxonomy",
+    "species modelling": "Species modeling",
+    "testing": "Test",
+    "other": "Other"
+  },
+  "comments": {
+    "comments": "Comments",
+    "identification": "Identifications",
+    "type_comment": "Write your comments...",
+    "add_identification": "Send",
+    "has_identified": "Identified observation",
+    "add_comment_identification": "Add comment/identification",
+    "help": " (Need help)",
+    "someone": "Someone"
+  },
+  "footer": {
+    "about": "About",
+    "help": "Help",
+    "privacy": "Privacy Policy",
+    "term": "Terms of Service",
+    "contact": "Contact",
+    "follow_us": "Follow us:",
+    "h2020": "This project has received funding from the European Union\’s Horizon 2020 Research and Innovation Programme under Grant Agreement No 863463"
+  }
+}
