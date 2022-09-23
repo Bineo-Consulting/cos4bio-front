@@ -4,7 +4,7 @@
 
 Cos4Cloud is H2020 European Project, and one of their service is a Platform that allow to the experts to Find, Access, Reuse and Interoperate with observations from differentes Citizen Observatories, following the FAIR rules in terms to integrate in the future in the best way in the EOSC environment. 
 
-## What is Cos4Bio:
+This software has been developed by Bineo Consulting SL.
 
 ## What are the Biodiversty CO envolved?
 
@@ -59,12 +59,12 @@ and Enjoy!!
 ```cd cos4cloud```
 ```node app```
 
+## Licence
 
+[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)
 
-### LICENSES:
+This software has been developed by Bineo Consulting SL.
 
-<a href="https://www.safecreative.org/work/2110259629728-cos4bio" target="_blank">
-<span>Cos4Bio</span> -
-<span>CC by-nc-sa 4.0</span> -
-<span>Bineo Consulting SL</span>
-</a>
+Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+
+[View full GNU Affero General Public License v3.0 »](https://github.com/Bineo-Consulting/cos4bio-front/blob/master/LICENSE)
