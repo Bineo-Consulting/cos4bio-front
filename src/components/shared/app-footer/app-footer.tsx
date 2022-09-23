@@ -47,6 +47,10 @@ export class AppFooter {
                 <a href={`/${this.lang}/help.html`} target="_blank" innerHTML={this.i18n.footer.help}></a>
                 <a href="/apidoc/index.html" target="_blank">API</a>
               </div>
+              <div class="logowrap">
+                <img src="https://cos4cloud-eosc.eu/wp-content/uploads/2020/07/logo-cos4cloud-middle.png" alt="logo cos4cloud project"/>
+                <img class="ml-x" src="https://marketplace.eosc-portal.eu/packs/media/images/eosc-logo-color-883f208671ef77b15b9cd067ecdc369b.png" alt="logo eosc"/>
+              </div>
             </div>
 
             <div class="rrss">

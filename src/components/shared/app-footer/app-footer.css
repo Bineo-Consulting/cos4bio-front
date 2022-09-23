@@ -84,3 +84,15 @@ a {
 .eu img {
   margin: 4px;
 }
+.logowrap {
+  text-align:left;
+}
+.logowrap img {
+  max-width: 200px;
+  text-align: left;
+  margin: 27px 0px;
+  filter: drop-shadow(1px 1px 0px #888);
+}
+.ml-x {
+  margin-left: 20px;
+}

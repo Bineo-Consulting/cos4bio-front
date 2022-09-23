@@ -29,9 +29,7 @@ export class AppSearch {
 
   origin: any = {
     natusfera: 'false',
-    // ispot: 'false',
     plantnet: 'false',
-    // artportalen: 'false',
     gbif: 'false'
   }
   origins = Object.keys(this.origin) // hamelin
@@ -126,7 +124,7 @@ export class AppSearch {
   onSpecie(ev) {
     const item = (ev || {}).detail
     if (item) {
-      const name = (item.name || '').split(' ').slice(0, 2).join(' ')
+      const name = item.name || ''
       this.params.scientificName = name || null
     } else {
       this.params.scientificName = null
@@ -140,7 +138,7 @@ export class AppSearch {
       this.params.decimalLongitude = [Number(item.bbox[2]), Number(item.bbox[3])]
       this.params.place = item.name || null
     } else if (item) {
-      const name = (item.name || '').split(' ').slice(0, 2).join(' ')
+      const name = (item.name || '')
       this.params.scientificName = name || null
     } else {
       this.params.decimalLongitude = null
@@ -177,7 +175,7 @@ export class AppSearch {
       this.params.place = item.name || null
       this.place = this.params.place
     } else if (item) {
-      const name = (item.name || '').split(' ').slice(0, 2).join(' ')
+      const name = (item.name || '')
       this.params.scientificName = name || null
       this.specie = this.params.scientificName
     } else {

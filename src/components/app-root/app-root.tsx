@@ -286,9 +286,6 @@ export class AppRoot {
   render() {
     return (
       <div class={"bg-video " + this.location.pathname} onScroll={e => this.onScroll(e)}>
-        {/*<video playsinline autoplay muted loop poster="/assets/valley-day/Valley-day.png" id="bgvid">
-          <source src="/assets/valley-day/Valley-day.mp4" type="video/mp4"/>
-        </video>*/}
 
         <nav class={this.location.pathname} ref={e => this.nav = e} role="navigation">
           <div class="logo">
