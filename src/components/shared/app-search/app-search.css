@@ -64,6 +64,11 @@ ion-list.lite ion-checkbox {
   margin: 8px;
 }
 
+.close-x {
+  font-size: 45px;
+  display: contents;
+}
+
 .clean {
   display: none;
 }

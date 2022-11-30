@@ -169,6 +169,9 @@ export class PageObservation {
       if (this.item.id.includes('gbif')) {
         return `https://www.gbif.org/occurrence/${id}`
       }
+      if (this.item.id.toLowerCase().includes('artportalen')) {
+        return `https://www.artportalen.se/sighting/${id}`
+      }
       return `https://natusfera.org/observations/${id}`
     }
     return '#'

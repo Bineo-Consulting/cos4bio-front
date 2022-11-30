@@ -22,7 +22,7 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null,
-      baseUrl: 'https://cos4bio.es/'
+      baseUrl: 'https://cos4bio.eu/'
     }
   ],
   plugins: [

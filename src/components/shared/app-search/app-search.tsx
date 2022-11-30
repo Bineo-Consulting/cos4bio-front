@@ -30,7 +30,8 @@ export class AppSearch {
   origin: any = {
     natusfera: 'false',
     plantnet: 'false',
-    gbif: 'false'
+    gbif: 'false',
+    artportalen: 'false'
   }
   origins = Object.keys(this.origin) // hamelin
 
@@ -175,7 +176,7 @@ export class AppSearch {
       this.params.place = item.name || null
       this.place = this.params.place
     } else if (item) {
-      const name = (item.name || '')
+      const name = item.name || this.term || ''
       this.params.scientificName = name || null
       this.specie = this.params.scientificName
     } else {
@@ -193,9 +194,12 @@ export class AppSearch {
   }
 
   onSearch() {
-    console.log([this.term, this.place, this.specie, this.term && !this.place && !this.specie])
-    if (this.term && !this.place && !this.specie) {
-      return this.presentAlert()
+    console.log({term: this.term, m: this.matchSpecie}, [this.place, this.specie])
+    if (this.term) {
+      if (!this.matchSpecie && !this.place && !this.specie) {
+        return this.presentAlert()
+      }
+      this.params.scientificName = this.specie = this.term
     }
     const iconic_taxa = Object.keys(this.iconic_taxa).map(key => {
       return this.iconic_taxa[key] === 'true' ? key : null
@@ -407,9 +411,11 @@ export class AppSearch {
   }
 
   term: string = null
+  matchSpecie: boolean = false
   onSearchValue(term) {
-    console.log('onSearchValue', {term})
-    this.term = term.detail
+    console.log('onSearchValue => ', {term})
+    this.term = term.detail.value
+    this.matchSpecie = !!term.detail.match
   } 
 
   async presentAlert() {
@@ -445,11 +451,11 @@ export class AppSearch {
               <div class="float-chips-wrappers">
                 {this.specie && <ion-chip>
                   <ion-label>{this.specie}</ion-label>
-                  <ion-icon onClick={_ => this.cleanSpecie()} name="close-circle"></ion-icon>
+                  <ion-icon class="close-x" onClick={_ => this.cleanSpecie()} name="close-circle"></ion-icon>
                 </ion-chip>}
                 {this.place && <ion-chip>
                   <ion-label>{this.place}</ion-label>
-                  <ion-icon onClick={_ => this.cleanPlace()} name="close-circle"></ion-icon>
+                  <ion-icon class="close-x" onClick={_ => this.cleanPlace()} name="close-circle"></ion-icon>
                 </ion-chip>}
               </div>
             </ion-col>

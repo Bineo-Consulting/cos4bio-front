@@ -24,5 +24,3 @@ p.then(res => res.text()).then(res => {
 console.log(res.split("\n")[1])
   return dJSON.parse(res.split("\n")[1])
 })
-
-

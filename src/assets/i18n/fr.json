@@ -111,6 +111,6 @@
     "term": "Conditions d'utilisation",
     "contact": "Contact",
     "follow_us": "Suivez-nous :",
-    "h2020": "Ce projet a reçu un financement du programme Horizon 2020 Research and Innovation de l'Union Européenne, au titre de l'accord de subvention n°863463"
+    "h2020": "Ce projet a reçu un financement du programme Horizon 2020 Research and Innovation de l'Union Européenne, au titre de <a class='link' href='https://cordis.europa.eu/project/id/863463/fr' rel='noopener' target='_blank'>l'accord de subvention n°863463</a>"
   }
 }

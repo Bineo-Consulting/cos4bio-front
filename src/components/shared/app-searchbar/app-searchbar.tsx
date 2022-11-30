@@ -27,8 +27,7 @@ export class AppSearchbar {
   @State() itemsCache = JSON.parse(localStorage.search || '[]')
 
   async onInput(ev) {
-    console.log({onInput:(ev)})
-    const term = ev.detail.value || ''
+    const term = (ev.detail.value || '').trim().toLowerCase()
     if (term) {
       if (this.service2) {
         const itemsAsync = this.service.get({
@@ -52,7 +51,15 @@ export class AppSearchbar {
       this.choose.emit(null)
     }
 
-    this.searchValue.emit(term)
+    const found = this.items.filter(i => !i.bbox).find(i => i.name.toLowerCase().includes(term))
+    console.log('items => ', this.items.filter(i => !i.bbox).map(i => i.name.toLowerCase()))
+    console.log({found})
+    if (found) {
+      this.searchValue.emit({value: term, match: true})
+    } else {
+      this.searchValue.emit({value: term, match: false})
+    }
+
   }
 
   setCache(item) {

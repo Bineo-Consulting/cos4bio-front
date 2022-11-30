@@ -74,10 +74,9 @@ export class MappingService {
   static async get(params = null, cache = false) {
     const queryParams = params ? toQueryString(params) : ''
 
-    if (cache && this.cache && this.cache.last && this.cache.time > Date.now() - 90 * 1000) {
+    if (cache && this.cache && this.cache.last && this.cache.time > Date.now() - 300 * 1000) {
       return this.cache.last.map(parseDwc)
     }
-    console.log(url + queryParams)
     return fetch(url + queryParams)
     .then(res => res.json())
     .then(items => {
@@ -92,7 +91,7 @@ export class MappingService {
   }
 
   static get getLastCache(): any[] {
-    if (MappingService.cache.time > Date.now() - 90 * 1000)
+    if (MappingService.cache.time > Date.now() - 300 * 1000)
       return MappingService.cache.last ? MappingService.cache.last.map(parseDwc) : []
     else return []
   }
@@ -217,7 +216,6 @@ export class MappingService {
     alert.cssClass = 'my-alert';
     alert.header = 'Alert';
     alert.message = `<b>${msg}</b>`;
-    // alert.message = 'This is an alert message.';
     alert.buttons = ['OK'];
 
     document.body.appendChild(alert);
@@ -229,13 +227,6 @@ export class MappingService {
   }
 
   static addComment(p) {
-
-    let error = false
-    if (p.item && p.item.projects && p.item.projects.length) {
-      error = !p.item.projects.includes(1252)
-    }
-    if (error) return this.showAlert('Esta observación no pertenece al proyecto Cos4Cloud de natusfera')
-
     const user = JSON.parse(localStorage.user)
     const params = {
       user_id: 1,
@@ -244,10 +235,10 @@ export class MappingService {
       type: undefined,
       token: user.access_token,
       sub: user.sub,
+      projects: p.item.projects,
       body: p.comment || p.body || 'by Cos4Cloud'
     }
     const q = toQueryString(params)
-    // return fetch(`https://natusfera.gbif.es/observations/add_identification?${q}`)
     return fetch(`${host}/comments${q}`, {
       method: 'POST',
       headers: {
